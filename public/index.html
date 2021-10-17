@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/images/favicon-32x32.png"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/public/style.css" />
+
+    <title>Frontend Mentor | Clipboard landing page</title>
+  </head>
+  <body class="font-primary text-neutral-light relative">
+    <!-- Hero Image -->
+    <img
+      src="/public/images/bg-header-desktop.png"
+      alt=""
+      class="
+        absolute
+        top-0
+        left-0
+        bg-cover
+        w-full
+        hidden
+        tablet:block
+      "
+    />
+
+    <img
+      src="/public/images/bg-header-mobile.png"
+      alt=""
+      class="absolute top-0 left-0 bg-cover w-full tablet:hidden"
+    />
+
+    <!-- hero -->
+    <section class="container py-28 flex flex-col items-center">
+      <img src="/public/images/logo.svg" alt="" />
+      <h1 class="heading text-3xl mt-16 mb-4 laptop:text-4xl">
+        A history of everything you copy
+      </h1>
+      <p class="tablet:max-w-2xl mx-auto laptop:text-xl">
+        Clipboard allows you to track and organize everything you
+        copy. Instantly access your clipboard on all your devices.
+      </p>
+      <div class="btn-container">
+        <button type="button" class="btn btn-cyan">
+          Download for iOS
+        </button>
+        <button type="button" class="btn btn-blue">
+          Download for Mac
+        </button>
+      </div>
+    </section>
+
+    <!-- section 1 -->
+    <section class="px-8 relative max-w-screen-desktop mx-auto">
+      <h2 class="heading text-2xl mb-4 laptop:text-3xl">
+        Keep track of your snippets
+      </h2>
+      <p class="mb-14 tablet:max-w-2xl mx-auto laptop:text-xl">
+        Clipboard instantly stores any item you copy in the cloud,
+        meaning you can access your snippets immediately on all your
+        devices. Our Mac and iOS apps will help you organize
+        everything.
+      </p>
+      <img
+        src="/public/images/image-computer.png"
+        alt=""
+        class="
+          tablet:w-2/4
+          mx-auto
+          laptop:w-auto laptop:mx-0 laptop:absolute laptop:-left-10
+        "
+      />
+      <div
+        class="
+          flex flex-col
+          gap-12
+          my-14
+          laptop:items-end
+          relative
+          laptop:mt-28
+          desktop:right-44
+          laptop:right-20
+        "
+      >
+        <div class="">
+          <h3
+            class="
+              heading
+              mb-2
+              text-xl
+              laptop:text-left laptop:text-2xl
+            "
+          >
+            Quick Search
+          </h3>
+          <p class="laptop:text-left max-w-sm mx-auto">
+            Easily search your snippets by content, category, web
+            address, application, and more.
+          </p>
+        </div>
+        <div class="">
+          <h3
+            class="
+              heading
+              mb-2
+              text-xl
+              laptop:text-left laptop:text-2xl
+            "
+          >
+            iCloud Sync
+          </h3>
+          <p class="laptop:text-left max-w-sm mx-auto">
+            Instantly saves and syncs snippets across all your
+            devices.
+          </p>
+        </div>
+        <div class="">
+          <h3
+            class="
+              heading
+              mb-2
+              text-xl
+              laptop:text-left laptop:text-2xl
+            "
+          >
+            Complete History
+          </h3>
+          <p class="laptop:text-left max-w-sm mx-auto">
+            Retrieve any snippets from the first moment you started
+            using the app.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="py-20 container laptop:mt-60">
+      <h2 class="heading text-2xl mb-4 laptop:text-3xl">
+        Access Clipboard anywhere
+      </h2>
+      <p class="mb-14 tablet:max-w-2xl mx-auto laptop:text-xl">
+        Whether you’re on the go, or at your computer, you can access
+        all your Clipboard snippets in a few simple clicks.
+      </p>
+      <img
+        src="/public/images/image-devices.png"
+        alt=""
+        class="
+          transform
+          scale-110
+          tablet:scale-100 tablet:w-2/4
+          laptop:w-auto
+          mx-auto
+        "
+      />
+    </section>
+
+    <!-- section 3 -->
+    <section class="container mt-12">
+      <h2 class="heading text-2xl mb-4 laptop:text-3xl">
+        Supercharge your workflow
+      </h2>
+      <p class="mb-16 tablet:max-w-2xl mx-auto laptop:text-xl">
+        We’ve got the tools to boost your productivity.
+      </p>
+
+      <div
+        class="
+          flex flex-col
+          gap-11
+          laptop:flex-row laptop:items-center
+        "
+      >
+        <div>
+          <img
+            src="/public/images/icon-blacklist.svg"
+            alt=""
+            class="mx-auto mb-8"
+          />
+          <h3 class="heading mb-2 text-xl laptop:text-2xl">
+            Create blacklists
+          </h3>
+          <p class="max-w-sm mx-auto">
+            Ensure sensitive information never makes its way to your
+            clipboard by excluding certain sources.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/public/images/icon-text.svg"
+            alt=""
+            class="mx-auto mb-8"
+          />
+          <h3 class="heading mb-2 text-xl laptop:text-2xl">
+            Plain text snippets
+          </h3>
+          <p class="max-w-sm mx-auto">
+            Remove unwanted formatting from copied text for a
+            consistent look.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/public/images/icon-preview.svg"
+            alt=""
+            class="mx-auto mb-8"
+          />
+          <h3 class="heading mb-2 text-xl laptop:text-2xl">
+            Sneak preview
+          </h3>
+          <p class="max-w-sm mx-auto">
+            Quick preview of all snippets on your Clipboard for easy
+            access.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="
+          my-28
+          flex flex-col
+          gap-12
+          items-center
+          laptop:gap-16
+          tablet:flex-row tablet:flex-wrap
+        "
+      >
+        <img src="/public/images/logo-google.png" alt="" />
+        <img src="/public/images/logo-ibm.png" alt="" />
+        <img src="/public/images/logo-microsoft.png" alt="" />
+        <img src="/public/images/logo-hp.png" alt="" />
+        <img src="/public/images/logo-vector-graphics.png" alt="" />
+      </div>
+    </section>
+
+    <!-- download -->
+    <section class="container pt-8 pb-36">
+      <h2 class="heading text-2xl mb-4 laptop:text-3xl">
+        Clipboard for iOS and Mac OS
+      </h2>
+      <p class="mb-14 tablet:max-w-2xl mx-auto laptop:text-xl">
+        Available for free on the App Store. Download for Mac or iOS,
+        sync with iCloud and you’re ready to start adding to your
+        clipboard.
+      </p>
+      <div class="btn-container">
+        <button type="button" class="btn btn-cyan">
+          Download for iOS
+        </button>
+        <button type="button" class="btn btn-blue">
+          Download for Mac
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-11 bg-gray-100 text-neutral-dark">
+      <div
+        class="
+          container
+          flex flex-col
+          items-center
+          gap-8
+          laptop:flex-row laptop:gap-28
+        "
+      >
+        <img src="/public/images/logo.svg" alt="" class="w-14" />
+        <ul
+          class="
+            flex flex-col
+            items-center
+            gap-4
+            laptop:flex-1
+            laptop:flex-wrap
+            laptop:items-start
+            laptop:content-start
+            laptop:justify-start
+            laptop:justify-items-start
+            laptop:h-16
+            laptop:gap-x-20
+          "
+        >
+          <li class="">
+            <a href="#" class="hover:text-cyan">FAQs</a>
+          </li>
+          <li class="">
+            <a href="#" class="hover:text-cyan">Contact Us</a>
+          </li>
+          <li class="">
+            <a href="#" class="hover:text-cyan">Privacy Policy</a>
+          </li>
+          <li class="">
+            <a href="#" class="hover:text-cyan">Press Kit</a>
+          </li>
+          <li class="">
+            <a href="#" class="hover:text-cyan">Install Guide</a>
+          </li>
+        </ul>
+        <ul class="flex flex-row gap-6">
+          <li>
+            <a href="#" class="hover:text-cyan"
+              ><i
+                class="text-3xl fab fa-facebook-square"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-cyan"
+              ><i
+                class="text-3xl fab fa-twitter"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-cyan"
+              ><i
+                class="text-3xl fab fa-instagram"
+                aria-hidden="true"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
